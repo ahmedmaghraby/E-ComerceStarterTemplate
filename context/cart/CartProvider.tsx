@@ -44,6 +44,7 @@ const useProvideCart = () => {
   };
 
   const addOne = (item: itemType) => {
+    item = {...item, qty:1}
     dispatch({
       type: ADD_ONE,
       payload: item,
