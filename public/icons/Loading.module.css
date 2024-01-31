@@ -21,10 +21,7 @@
   left: -8px;
   animation: ldsEllipsis2 0.6s infinite;
 }
-/* .ldsEllipsis div:nth-child(3) {
-  left: 32px;
-  animation: ldsEllipsis2 0.6s infinite;
-} */
+
 .ldsEllipsis div:nth-child(3) {
   left: 28px;
   animation: ldsEllipsis3 0.6s infinite;

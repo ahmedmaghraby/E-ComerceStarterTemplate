@@ -1,4 +1,3 @@
-/* Top Bar */
 .topLeftMenu {
   @apply ml-8;
 }
@@ -11,7 +10,6 @@
   @apply text-xs my-2 ml-4 hover:text-gray300;
 }
 
-/* Main Menu */
 .mainMenu {
   @apply py-6;
 }

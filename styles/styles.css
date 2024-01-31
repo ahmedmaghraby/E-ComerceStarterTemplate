@@ -34,7 +34,6 @@ html[lang="ar"] {
   }
 }
 
-/* ===== Custom Swiper pagination ===== */
 .card-swiper .swiper-pagination-bullets {
   bottom: 0 !important;
 }
@@ -48,8 +47,3 @@ html[lang="ar"] {
 .swiper-pagination-bullet-active {
   background-color: #282828 !important;
 }
-
-/* .swiper-slide {
-  width: 100% !important;
-  margin: auto !important;
-} */

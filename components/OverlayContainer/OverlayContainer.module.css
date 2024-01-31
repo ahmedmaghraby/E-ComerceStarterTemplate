@@ -20,7 +20,6 @@
   right: 10%;
   bottom: 10%;
 }
-/* @apply w-4/5 h-4/5 absolute; */
 
 .imgContainer:hover .overlayBorder {
   transition: all 0.3s;
@@ -29,9 +28,7 @@
   width: 80%;
   height: 80%;
   border-left: 1px solid white;
-  /* border-right: 1px solid white; */
   border-bottom: 1px solid white;
-  /* border-top: 1px solid white; */
 }
 
 .overlayBorder2 {
@@ -46,8 +43,6 @@
   transition-property: width, height;
   width: 80%;
   height: 80%;
-  /* border-left: 1px solid white; */
   border-right: 1px solid white;
-  /* border-bottom: 1px solid white; */
   border-top: 1px solid white;
 }
