@@ -17,32 +17,32 @@ export default function Footer() {
           <div>
             <h3 className={styles.footerHead}>{t("company")}</h3>
             <div className={styles.column}>
-              <a href="/coming-soon">{t("about_us")}</a>
-              <a href="/coming-soon">{t("contact_us")}</a>
-              <a href="/coming-soon">{t("store_location")}</a>
-              <a href="/coming-soon">{t("careers")}</a>
+              <Link href="/coming-soon">{t("about_us")}</Link>
+              <Link href="/coming-soon">{t("contact_us")}</Link>
+              <Link href="/coming-soon">{t("store_location")}</Link>
+              <Link href="/coming-soon">{t("careers")}</Link>
             </div>
           </div>
           <div>
             <h3 className={styles.footerHead}>{t("help")}</h3>
             <div className={styles.column}>
-              <a href="/coming-soon">{t("order_tracking")}</a>
-              <a href="/coming-soon">{t("faqs")}</a>
-              <a href="/coming-soon">{t("privacy_policy")}</a>
-              <a href="/coming-soon">{t("terms_conditions")}</a>
+              <Link href="/coming-soon">{t("order_tracking")}</Link>
+              <Link href="/coming-soon">{t("faqs")}</Link>
+              <Link href="/coming-soon">{t("privacy_policy")}</Link>
+              <Link href="/coming-soon">{t("terms_conditions")}</Link>
             </div>
           </div>
           <div>
             <h3 className={styles.footerHead}>{t("store")}</h3>
             <div className={styles.column}>
               <Link href={`/product-category/women`}>
-                <a>{t("women")}</a>
+                {t("women")}
               </Link>
               <Link href={`/product-category/men`}>
-                <a>{t("men")}</a>
+                {t("men")}
               </Link>
               <Link href={`/product-category/bags`}>
-                <a>{t("bags")}</a>
+                {t("bags")}
               </Link>
             </div>
           </div>
@@ -71,18 +71,18 @@ export default function Footer() {
             <span className="hidden sm:block">
               {t("follow_us_on_social_media")}:
             </span>{" "}
-            <a
+            <Link
               href="www.facebook.com"
               aria-label="Facebook Page for webook page"
             >
               <FacebookLogo />
-            </a>
-            <a
+            </Link>
+            <Link
               href="www.ig.com"
               aria-label="Instagram Account for webook page"
             >
               <InstagramLogo />
-            </a>
+            </Link>
           </span>
         </div>
       </div>
