@@ -5,6 +5,7 @@ import TextButton from "@/components/Buttons/TextButton";
 import styles from "./Hero.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper/core";
+import { useRouter } from "next/router";
 
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
@@ -44,11 +45,13 @@ const sliders = [
 
 const Slideshow = () => {
   const t = useTranslations("Index");
+  const {locale} = useRouter();
 
   return (
     <>
       <div className="relative z-20 w-full -top-20 slide-container">
         <Swiper
+          dir={locale == 'ar' ? 'rtl' :'ltr'}
           slidesPerView={1}
           spaceBetween={0}
           loop={true}
@@ -62,6 +65,7 @@ const Slideshow = () => {
             type: "fraction",
             dynamicBullets: true,
           }}
+          
           className="mySwiper"
         >
           {sliders.map((slider) => (

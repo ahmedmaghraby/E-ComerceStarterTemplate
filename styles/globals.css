@@ -9,22 +9,23 @@
   .app-x-padding {
     @apply px-4 sm:px-8 md:px-12;
   }
+
   .app-max-width {
-    @apply  max-w-7xl mx-auto;
+    @apply max-w-7xl mx-auto;
   }
 }
 
 @layer utilities {
-  @variants responsive {
-    .bottom-10-per {
-      bottom: 10%;
-    }
-    .left-10-per {
-      left: 10%;
-    }
-    .right-10-per {
-      right: 10%;
-    }
+  .bottom-10-per {
+    bottom: 10%;
+  }
+
+  .left-10-per {
+    left: 10%;
+  }
+
+  .right-10-per {
+    right: 10%;
   }
 }
 
@@ -33,7 +34,8 @@
   right: 0;
   border-color: #282828;
 }
-.toggle-checkbox:checked + .toggle-label {
+
+.toggle-checkbox:checked+.toggle-label {
   @apply: bg-gray500;
   background-color: #282828;
 }

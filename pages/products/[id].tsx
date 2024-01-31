@@ -160,7 +160,7 @@ const Product: React.FC<ProductProps> = ({ product, products }) => {
             <span className="mb-2">
               {t("size")}: {size}
             </span>
-            <div className="flex mb-4 space-x-4 text-sm sizeContainer">
+            <div className="flex mb-4 gap-4 text-sm sizeContainer">
               <div
                 onClick={() => handleSize("S")}
                 className={`w-8 h-8 flex items-center justify-center border ${
