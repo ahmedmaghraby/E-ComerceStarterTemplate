@@ -40,7 +40,7 @@ export default function Document() {
         <meta property="og:description" content={desc} key="og_description" />
         <meta property="og:title" content={title} key="og_title" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@satnaing.dev" />
+        <meta name="twitter:site" content="@Webook" />
         <meta name="twitter:title" content={title} key="twitter_title" />
         <meta
           name="twitter:description"
