@@ -5,24 +5,20 @@ import { useTranslations } from "next-intl";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Card from "@/components/Card/Card";
-import { productResponse, itemType } from "@/type/product";
+import { productResponse } from "@/type/product";
 import { productApi } from "@/_fakeApi_/product"
+import { searchWordProps } from "@/type/props";
 
-type Props = {
-  items: itemType[];
-  searchWord: string;
-};
 
-const Search: React.FC<Props> = ({ items, searchWord }) => {
+
+const Search: React.FC<searchWordProps> = ({ items, searchWord }) => {
   const t = useTranslations("Search");
 
   return (
     <div>
-      {/* ===== Head Section ===== */}
-      <Header title={`Haru Fashion`} />
+      <Header title={`Webook`} />
 
       <main id="main-content">
-        {/* ===== Breadcrumb Section ===== */}
         <div className="flex items-center w-full h-16 bg-lightgreen">
           <div className="w-full app-x-padding app-max-width">
             <div className="breadcrumb">
@@ -34,7 +30,6 @@ const Search: React.FC<Props> = ({ items, searchWord }) => {
           </div>
         </div>
 
-        {/* ===== Heading & Filter Section ===== */}
         <div className="w-full mt-8 app-x-padding app-max-width">
           <h1 className="mb-2 text-3xl">
             {t("search_results")}: &quot;{searchWord}&quot;
@@ -50,7 +45,6 @@ const Search: React.FC<Props> = ({ items, searchWord }) => {
           )}
         </div>
 
-        {/* ===== Main Content Section ===== */}
         <div className="mt-3 app-x-padding app-max-width mb-14">
           {items.length < 1 ? (
             <div className="flex items-center justify-center h-72">
@@ -66,7 +60,6 @@ const Search: React.FC<Props> = ({ items, searchWord }) => {
         </div>
       </main>
 
-      {/* ===== Footer Section ===== */}
       <Footer />
     </div>
   );

@@ -1,14 +1,11 @@
 import Image from "next/image";
 import { FC } from "react";
 import styles from "./OverlayContainer.module.css";
+import { OverlayProps } from "@/type/props";
 
-type Props = {
-  imgSrc: string;
-  imgSrc2?: string;
-  imgAlt?: string;
-};
 
-const OverlayContainer: FC<Props> = ({ imgSrc, imgSrc2, imgAlt, children }) => (
+
+const OverlayContainer: FC<OverlayProps> = ({ imgSrc, imgSrc2, imgAlt, children }) => (
   <div className={`${styles.imgContainer}`}>
     {imgSrc2 ? (
       <>

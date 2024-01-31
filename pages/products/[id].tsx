@@ -21,15 +21,12 @@ import { useWishlist } from "@/context/wishlist/WishlistProvider";
 import { useCart } from "@/context/cart/CartProvider";
 import HeartSolid from "@/public/icons/HeartSolid";
 import { productApi } from "@/_fakeApi_/product"
+import { ProductProps } from "@/type/props";
 
 SwiperCore.use([Pagination]);
 
-type Props = {
-  product: itemType;
-  products: itemType[];
-};
 
-const Product: React.FC<Props> = ({ product, products }) => {
+const Product: React.FC<ProductProps> = ({ product, products }) => {
   const img1 = product.img1;
   const img2 = product.img2;
 
@@ -64,11 +61,9 @@ const Product: React.FC<Props> = ({ product, products }) => {
 
   return (
     <div>
-      {/* ===== Head Section ===== */}
-      <Header title={`${product.name} - Haru Fashion`} />
+      <Header title={`${product.name} - Webook`} />
 
       <main id="main-content">
-        {/* ===== Breadcrumb Section ===== */}
         <div className="flex items-center w-full h-16 border-t-2 bg-lightgreen border-gray200">
           <div className="w-full app-x-padding app-max-width">
             <div className="breadcrumb">
@@ -85,7 +80,6 @@ const Product: React.FC<Props> = ({ product, products }) => {
             </div>
           </div>
         </div>
-        {/* ===== Main Content Section ===== */}
         <div className="flex flex-col itemSection app-max-width app-x-padding md:flex-row">
           <div className="flex w-full h-full imgSection md:w-1/2">
             <div className="hidden w-full h-full my-4 space-y-4 sm:block sm:w-1/4">
@@ -260,10 +254,8 @@ const Product: React.FC<Props> = ({ product, products }) => {
             </div>
           </div>
         </div>
-        {/* ===== Horizontal Divider ===== */}
         <div className="border-b-2 border-gray200"></div>
 
-        {/* ===== You May Also Like Section ===== */}
         <div className="my-8 recSection app-max-width app-x-padding">
           <h2 className="mb-6 text-3xl">{t("you_may_also_like")}</h2>
           <Swiper
@@ -293,7 +285,6 @@ const Product: React.FC<Props> = ({ product, products }) => {
         </div>
       </main>
 
-      {/* ===== Footer Section ===== */}
       <Footer />
     </div>
   );

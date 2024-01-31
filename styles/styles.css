@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html[lang="ar"] {
+  direction: rtl;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color: #282828;

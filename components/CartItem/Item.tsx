@@ -1,18 +1,11 @@
 import Image from "next/image";
 import React, { FC, useContext } from "react";
 import { roundDecimal } from "@/components/Util/utilFunc";
+import {CartItemProps} from "@/type/props"
 
-type Props = {
-  img: string;
-  name: string;
-  price: number;
-  qty: number;
-  onAdd?: () => void;
-  onRemove?: () => void;
-  onDelete?: () => void;
-};
 
-const Item: FC<Props> = ({
+
+const Item: FC<CartItemProps> = ({
   img,
   name,
   price,

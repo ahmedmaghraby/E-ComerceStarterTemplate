@@ -1,20 +1,9 @@
-import { FC, FormEvent } from "react";
+import { InputProps } from "@/type/props";
+import { FC} from "react";
 
-type Props = {
-  type?: string;
-  name: string;
-  placeholder?: string;
-  extraClass?: string;
-  required?: boolean;
-  border?: string;
-  id?: string;
-  label?: string;
-  onChange?: (e: FormEvent<HTMLInputElement>) => void;
-  value?: string;
-  readOnly?: boolean;
-};
 
-const Input: FC<Props> = ({
+
+const Input: FC<InputProps> = ({
   type = "text",
   name,
   placeholder,

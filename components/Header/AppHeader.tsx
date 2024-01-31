@@ -1,19 +1,15 @@
 import React from "react";
 import Head from "next/head";
+import {HeaderProps} from "@/type/props"
 
-type Props = {
-  title?: string;
-  desc?: string;
-  keywords?: string;
-};
 
 const defaultDesc =
-  "Haru Fashion e-commerce developed with Next.JS. Coded with 🖤 by Sat Naing (satnaing.dev).";
+  "webook e-commerce";
 const defaultKeywords =
-  "Haru Fashion, Online Shop, E-commerce, Sat Naing, NextJS";
+  "Online Shop, E-commerce, men, wommen , shirts ";
 
-const AppHeader: React.FC<Props> = ({
-  title = "Haru Fashion",
+const AppHeader: React.FC<HeaderProps> = ({
+  title = "Webook",
   desc = defaultDesc,
   keywords = defaultKeywords,
 }) => {

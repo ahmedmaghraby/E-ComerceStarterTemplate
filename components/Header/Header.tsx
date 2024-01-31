@@ -60,10 +60,8 @@ const Header: React.FC<Props> = ({ title }) => {
   }
   return (
     <>
-      {/* ===== <head> section ===== */}
       <AppHeader title={title} />
 
-      {/* ===== Skip to main content button ===== */}
       <a
         href="#main-content"
         className="absolute z-50 px-4 py-3 transition-all duration-300 transform -translate-y-40 bg-white rounded-md whitespace-nowrap left-4 opacity-90 focus:translate-y-0"
@@ -71,10 +69,8 @@ const Header: React.FC<Props> = ({ title }) => {
         {t("skip_to_main_content")}
       </a>
 
-      {/* ===== Top Navigation ===== */}
       <TopNav />
 
-      {/* ===== Main Navigation ===== */}
       <nav
         className={`${
           scrolled ? "bg-white sticky top-0 shadow-md z-50" : "bg-transparent"
@@ -84,12 +80,10 @@ const Header: React.FC<Props> = ({ title }) => {
           <div
             className={`flex justify-between align-baseline app-x-padding ${styles.mainMenu}`}
           >
-            {/* Hamburger Menu and Mobile Nav */}
             <div className="flex-1 lg:flex-0 lg:hidden">
               <Menu />
             </div>
 
-            {/* Left Nav */}
             <ul className={`flex-0 lg:flex-1 flex ${styles.leftMenu}`}>
               <li>
                 <Link href={`/product-category/men`}>
@@ -102,18 +96,12 @@ const Header: React.FC<Props> = ({ title }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/product-category/bags">
-                  <a>{t("bags")}</a>
-                </Link>
-              </li>
-              <li>
                 <Link href="/coming-soon">
                   <a>{t("blogs")}</a>
                 </Link>
               </li>
             </ul>
 
-            {/* Haru Logo */}
             <div className="flex items-center justify-center flex-1 cursor-pointer">
               <div className="w-32 h-auto">
                 <Link href="/">
@@ -121,7 +109,7 @@ const Header: React.FC<Props> = ({ title }) => {
                     <Image
                       className="justify-center"
                       src="/logo.svg"
-                      alt="Picture of the author"
+                      alt="Logo"
                       width={220}
                       height={50}
                       layout="responsive"
@@ -131,7 +119,6 @@ const Header: React.FC<Props> = ({ title }) => {
               </div>
             </div>
 
-            {/* Right Nav */}
             <ul className={`flex-1 flex justify-end ${styles.rightMenu}`}>
               <li>
                 <SearchForm />
@@ -143,7 +130,6 @@ const Header: React.FC<Props> = ({ title }) => {
               </li>
               <li>
                 <Link href="/wishlist" passHref>
-                  {/* <a className="relative" aria-label="Wishlist"> */}
                   <button
                     type="button"
                     className="relative"
@@ -158,7 +144,6 @@ const Header: React.FC<Props> = ({ title }) => {
                       </span>
                     )}
                   </button>
-                  {/* </a> */}
                 </Link>
               </li>
               <li>

@@ -139,18 +139,15 @@ const ShoppingCart = () => {
 
   return (
     <div>
-      {/* ===== Head Section ===== */}
-      <Header title={`Shopping Cart - Haru Fashion`} />
+      <Header title={`Shopping Cart - Webook`} />
 
       <main id="main-content">
-        {/* ===== Heading & Continue Shopping */}
         <div className="w-full px-4 border-t-2 app-max-width sm:px-8 md:px-20 border-gray100">
           <h1 className="mt-6 mb-2 text-2xl text-center sm:text-4xl sm:text-left animatee__animated animate__bounce">
             {t("checkout")}
           </h1>
         </div>
 
-        {/* ===== Form Section ===== */}
         {!completedOrder ? (
           <div className="flex flex-col px-4 app-max-width sm:px-8 md:px-20 mb-14 lg:flex-row">
             <div className="w-full h-full mr-8 lg:w-7/12">
@@ -292,7 +289,6 @@ const ShoppingCart = () => {
               )}
             </div>
             <div className="w-full h-full mt-10 lg:w-5/12 lg:mt-4">
-              {/* Cart Totals */}
               <div className="p-6 border divide-y-2 border-gray500 divide-gray200">
                 <div className="flex justify-between">
                   <span className="mb-3 text-base uppercase">
@@ -581,19 +577,18 @@ const ShoppingCart = () => {
                     <h2 className="text-xl font-bold">
                       {t("our_banking_details")}
                     </h2>
-                    <span className="block my-1 uppercase">Sat Naing :</span>
 
                     <div className="flex justify-between w-full xl:w-1/2">
-                      <span className="text-sm font-bold">AYA Bank</span>
-                      <span className="text-base">20012345678</span>
+                      <span className="text-sm font-bold">Rajhi Bank</span>
+                      <span className="text-base">SA 156484657845435757</span>
                     </div>
                     <div className="flex justify-between w-full xl:w-1/2">
-                      <span className="text-sm font-bold">CB Bank</span>
-                      <span className="text-base">0010123456780959</span>
+                      <span className="text-sm font-bold">Bank El bilad</span>
+                      <span className="text-base">SA 00101234567480959</span>
                     </div>
                     <div className="flex justify-between w-full xl:w-1/2">
-                      <span className="text-sm font-bold">KPay</span>
-                      <span className="text-base">095096051</span>
+                      <span className="text-sm font-bold">STC Pay</span>
+                      <span className="text-base">0530986119</span>
                     </div>
                   </div>
                 ) : (
@@ -602,7 +597,7 @@ const ShoppingCart = () => {
                       <Image
                         className="justify-center"
                         src="/logo.svg"
-                        alt="Haru Fashion"
+                        alt="Webook"
                         width={220}
                         height={50}
                         layout="responsive"
@@ -616,7 +611,6 @@ const ShoppingCart = () => {
         )}
       </main>
 
-      {/* ===== Footer Section ===== */}
       <Footer />
     </div>
   );

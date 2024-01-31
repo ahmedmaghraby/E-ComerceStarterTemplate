@@ -5,16 +5,11 @@ import { useTranslations } from "next-intl";
 import { useAuth } from "@/context/AuthContext";
 import Button from "@/components/Buttons/Button";
 import Input from "@/components/Input/Input";
+import { LoginProps } from "@/type/props";
 
-type Props = {
-  onRegister: () => void;
-  onForgotPassword: () => void;
-  errorMsg: string;
-  setErrorMsg: React.Dispatch<React.SetStateAction<string>>;
-  setSuccessMsg: React.Dispatch<React.SetStateAction<string>>;
-};
 
-const Login: React.FC<Props> = ({
+
+const Login: React.FC<LoginProps> = ({
   onRegister,
   onForgotPassword,
   errorMsg,

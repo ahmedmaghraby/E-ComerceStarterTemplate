@@ -31,11 +31,9 @@ const ShoppingCart = () => {
 
   return (
     <div>
-      {/* ===== Head Section ===== */}
-      <Header title={`Shopping Cart - Haru Fashion`} />
+      <Header title={`Shopping Cart - Webook`} />
 
       <main id="main-content">
-        {/* ===== Heading & Continue Shopping */}
         <div className="w-full px-4 border-t-2 app-max-width sm:px-8 md:px-20 border-gray100">
           <h1 className="mt-6 mb-2 text-2xl text-center sm:text-4xl sm:text-left animatee__animated animate__bounce">
             {t("shopping_cart")}
@@ -50,7 +48,6 @@ const ShoppingCart = () => {
           </div>
         </div>
 
-        {/* ===== Cart Table Section ===== */}
         <div className="flex flex-col px-4 app-max-width sm:px-8 md:px-20 mb-14 lg:flex-row">
           <div className="w-full h-full mr-4 lg:w-4/6">
             <table className="w-full mb-6">
@@ -154,7 +151,6 @@ const ShoppingCart = () => {
             </div>
           </div>
           <div className="w-full h-full mt-10 lg:w-4/12 lg:mt-0">
-            {/* Cart Totals */}
             <div className="p-6 border divide-y-2 border-gray500 divide-gray200">
               <h2 className="mb-3 text-xl">{t("cart_totals")}</h2>
               <div className="flex justify-between py-2">
@@ -230,7 +226,6 @@ const ShoppingCart = () => {
         </div>
       </main>
 
-      {/* ===== Footer Section ===== */}
       <Footer />
     </div>
   );

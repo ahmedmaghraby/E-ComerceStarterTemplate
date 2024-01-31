@@ -192,7 +192,6 @@ export default function Menu() {
                     </Link>
                     <hr className="w-full border border-gray300" />
 
-                    {/* Locale Dropdown */}
                     <HMenu
                       as="div"
                       className="relative w-full mt-4 mb-2 bg-gray100"
@@ -238,7 +237,6 @@ export default function Menu() {
                       </HMenu.Items>
                     </HMenu>
 
-                    {/* Currency Dropdown */}
                     <HMenu as="div" className="relative w-full my-2 bg-gray100">
                       <HMenu.Button
                         as="a"
@@ -286,14 +284,14 @@ export default function Menu() {
                       <a
                         href="#"
                         className="flex justify-center w-10 h-10 py-1 rounded-md text-gray400 px-auto active:bg-gray300"
-                        aria-label="Haru Fashion Facebook Page"
+                        aria-label="Webook Facebook Page"
                       >
                         <FacebookLogo extraClass="h-8" />
                       </a>
                       <a
                         href="#"
                         className="flex justify-center w-10 h-10 py-1 rounded-md text-gray400 px-auto active:bg-gray300"
-                        aria-label="Haru Fashion Facebook Page"
+                        aria-label="Webook Facebook Page"
                       >
                         <InstagramLogo extraClass="h-8" />
                       </a>

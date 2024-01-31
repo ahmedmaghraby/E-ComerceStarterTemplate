@@ -1,14 +1,10 @@
 import { useRouter } from "next/router";
 import NextArrow from "@/public/icons/NextArrow";
 import PrevArrow from "@/public/icons/PrevArrow";
+import { PaginationProps } from "@/type/props";
 
-type Props = {
-  lastPage: number;
-  currentPage: number;
-  orderby: "latest" | "price" | "price-desc";
-};
 
-const Pagination: React.FC<Props> = ({ lastPage, currentPage, orderby }) => {
+const Pagination: React.FC<PaginationProps> = ({ lastPage, currentPage, orderby }) => {
   const router = useRouter();
   const { category } = router.query;
 

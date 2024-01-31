@@ -5,21 +5,21 @@ import RightArrow from "@/public/icons/RightArrow";
 const testi = [
   {
     speech:
-      "Lorem ipsum dolor sit, amet consectetur rro fuga minima necessitatibus repellendus. Veniam suscipit excepturi rem aliquam officiis.",
-    name: "David",
+      "Noise Buds Solo Earbuds: Killer sound, comfy fit, great price. Touch controls could be smoother, but overall a steal!",
+    name: "Aya mohamed",
     occupation: "Social Influencer",
   },
   {
     speech:
-      "Nesciunt natus ullam iusto, maiores facere consectetur minima necessitatib adipisicing elit. Autem porro",
-    name: "Neymar",
-    occupation: "Athlete",
+      "Blooming Boutique's floral midi: Flattering fit, vibrant print, comfy fabric. Summer fun or dress it up!",
+    name: "hafsa Omar",
+    occupation: "Customer",
   },
   {
     speech:
-      "provident neque obcaecati, quo consequatur delectus s ullam iusto, maiores facere consecte",
-    name: "Ronaldo",
-    occupation: "Business Owner",
+      "Sharp Threads' linen shirt: Light, cool, classic. Chambray details rock. Summer must-have! ",
+    name: "Ahmed Maghraby",
+    occupation: "Customer",
   },
 ];
 

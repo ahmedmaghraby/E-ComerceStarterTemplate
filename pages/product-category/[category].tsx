@@ -9,19 +9,13 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Card from "@/components/Card/Card";
 import Pagination from "@/components/Util/Pagination";
-import { productResponse, itemType } from "@/type/product";
+import { productResponse } from "@/type/product";
 import DownArrow from "@/public/icons/DownArrow";
+import { CatProps, OrderType } from "@/type/props";
 
-type OrderType = "latest" | "price" | "price-desc";
 
-type Props = {
-  items: itemType[];
-  page: number;
-  numberOfProducts: number;
-  orderby: OrderType;
-};
 
-const ProductCategory: React.FC<Props> = ({
+const ProductCategory: React.FC<CatProps> = ({
   items,
   page,
   numberOfProducts,
@@ -43,11 +37,9 @@ const ProductCategory: React.FC<Props> = ({
 
   return (
     <div>
-      {/* ===== Head Section ===== */}
-      <Header title={`${capitalizedCategory} - Haru Fashion`} />
+      <Header title={`${capitalizedCategory} - Webook`} />
 
       <main id="main-content">
-        {/* ===== Breadcrumb Section ===== */}
         <div className="flex items-center w-full h-16 bg-lightgreen">
           <div className="w-full app-x-padding app-max-width">
             <div className="breadcrumb">
@@ -59,7 +51,6 @@ const ProductCategory: React.FC<Props> = ({
           </div>
         </div>
 
-        {/* ===== Heading & Filter Section ===== */}
         <div className="w-full mt-8 app-x-padding app-max-width">
           <h3 className="mb-2 text-4xl capitalize">{t(category as string)}</h3>
           <div className="flex flex-col-reverse justify-between gap-4 mt-4 sm:flex-row sm:gap-0 sm:mt-6">
@@ -74,7 +65,6 @@ const ProductCategory: React.FC<Props> = ({
           </div>
         </div>
 
-        {/* ===== Main Content Section ===== */}
         <div className="mt-3 app-x-padding app-max-width mb-14">
           <div className="grid grid-cols-2 mb-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-10 sm:gap-y-6">
             {items.map((item) => (
@@ -92,7 +82,6 @@ const ProductCategory: React.FC<Props> = ({
         </div>
       </main>
 
-      {/* ===== Footer Section ===== */}
       <Footer />
     </div>
   );

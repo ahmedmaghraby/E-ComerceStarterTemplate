@@ -15,9 +15,7 @@
 .mainMenu {
   @apply py-6;
 }
-/* .leftMenu {
-  @apply ml-8 my-6;
-} */
+
 
 .leftMenu li {
   @apply mr-12 hidden lg:block whitespace-nowrap;

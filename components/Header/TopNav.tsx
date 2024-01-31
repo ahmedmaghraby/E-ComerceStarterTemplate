@@ -7,12 +7,9 @@ import InstagramLogo from "@/public/icons/InstagramLogo";
 import FacebookLogo from "@/public/icons/FacebookLogo";
 import DownArrow from "@/public/icons/DownArrow";
 import styles from "./Header.module.css";
+import {LinkProps} from "@/type/props"
 
-type LinkProps = {
-  href: string;
-  locale: "en" | "ar";
-  active: boolean;
-};
+
 
 const MyLink: React.FC<LinkProps> = ({
   href,
@@ -45,12 +42,12 @@ const TopNav = () => {
       <div className="flex justify-between app-max-width">
         <ul className={`flex ${styles.topLeftMenu}`}>
           <li>
-            <a href="#" aria-label="Haru Fashion Facebook Page">
+            <a href="#" aria-label="Webook Facebook Page">
               <FacebookLogo />
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Haru Fashion Instagram Account">
+            <a href="#" aria-label="Webook Instagram Account">
               <InstagramLogo />
             </a>
           </li>
@@ -83,46 +80,6 @@ const TopNav = () => {
                     <MyLink active={active} href={asPath} locale="ar">
                       {t("arl")}
                     </MyLink>
-                  )}
-                </Menu.Item>
-              </Menu.Items>
-            </Menu>
-          </li>
-          <li>
-            <Menu as="div" className="relative">
-              <Menu.Button as="a" href="#" className="flex">
-                {t("usd")} <DownArrow />
-              </Menu.Button>
-              <Menu.Items
-                className="absolute right-0 flex flex-col w-20 p-1 mt-2 bg-white border outline-none border-gray200"
-                style={{ zIndex: 9999 }}
-              >
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#"
-                      className={`${
-                        active
-                          ? "bg-gray100 text-gray500"
-                          : "bg-white text-gray500"
-                      } py-2 px-4 text-center focus:outline-none`}
-                    >
-                      {t("usd")}
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      href="#"
-                      className={`${
-                        active
-                          ? "bg-gray100 text-gray500"
-                          : "bg-white text-gray500"
-                      } py-2 px-4 text-center focus:outline-none`}
-                    >
-                      {t("mmk")}
-                    </a>
                   )}
                 </Menu.Item>
               </Menu.Items>

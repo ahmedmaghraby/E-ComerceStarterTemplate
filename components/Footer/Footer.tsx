@@ -17,19 +17,19 @@ export default function Footer() {
           <div>
             <h3 className={styles.footerHead}>{t("company")}</h3>
             <div className={styles.column}>
-              <a href="example">{t("about_us")}</a>
-              <a href="example">{t("contact_us")}</a>
-              <a href="example">{t("store_location")}</a>
-              <a href="example">{t("careers")}</a>
+              <a href="/coming-soon">{t("about_us")}</a>
+              <a href="/coming-soon">{t("contact_us")}</a>
+              <a href="/coming-soon">{t("store_location")}</a>
+              <a href="/coming-soon">{t("careers")}</a>
             </div>
           </div>
           <div>
             <h3 className={styles.footerHead}>{t("help")}</h3>
             <div className={styles.column}>
-              <a href="example">{t("order_tracking")}</a>
-              <a href="example">{t("faqs")}</a>
-              <a href="example">{t("privacy_policy")}</a>
-              <a href="example">{t("terms_conditions")}</a>
+              <a href="/coming-soon">{t("order_tracking")}</a>
+              <a href="/coming-soon">{t("faqs")}</a>
+              <a href="/coming-soon">{t("privacy_policy")}</a>
+              <a href="/coming-soon">{t("terms_conditions")}</a>
             </div>
           </div>
           <div>
@@ -64,39 +64,22 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center pb-16">
-        <h4 className="mb-4 text-3xl">{t("newsletter")}</h4>
-        <span className="px-6 text-center">{t("newsletter_desc")}</span>
-        <div className="flex flex-col w-full px-6 mt-5 sm:w-auto sm:flex-row">
-          <Input
-            label="Newsletter Input Box"
-            name="email"
-            type="email"
-            extraClass=" w-full sm:w-auto"
-          />{" "}
-          <Button
-            size="lg"
-            value={t("send")}
-            extraClass="ml-0 mt-4 sm:mt-0 tracking-widest sm:tracking-normal sm:mt-0 sm:ml-4 w-auto w-full sm:w-auto"
-          />
-        </div>
-      </div>
       <div className={styles.bottomFooter}>
         <div className="flex justify-between w-full app-max-width app-x-padding">
-          <span className="">@2022 Haru. {t("all_rights_reserved")}</span>
+          <span className="">@{new Date().getFullYear()} Webook. {t("all_rights_reserved")}</span>
           <span className="flex items-center">
             <span className="hidden sm:block">
               {t("follow_us_on_social_media")}:
             </span>{" "}
             <a
               href="www.facebook.com"
-              aria-label="Facebook Page for Haru Fashion"
+              aria-label="Facebook Page for webook page"
             >
               <FacebookLogo />
             </a>
             <a
               href="www.ig.com"
-              aria-label="Instagram Account for Haru Fashion"
+              aria-label="Instagram Account for webook page"
             >
               <InstagramLogo />
             </a>

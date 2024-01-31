@@ -1,19 +1,15 @@
-import React, { FormEvent, useState } from "react";
+import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { useTranslations } from "next-intl";
 
 import Button from "@/components/Buttons/Button";
 import Input from "@/components/Input/Input";
 import { useAuth } from "@/context/AuthContext";
+import { RegProps } from "@/type/props";
 
-type Props = {
-  onLogin: () => void;
-  errorMsg: string;
-  setErrorMsg: React.Dispatch<React.SetStateAction<string>>;
-  setSuccessMsg: React.Dispatch<React.SetStateAction<string>>;
-};
 
-const Register: React.FC<Props> = ({
+
+const Register: React.FC<RegProps> = ({
   onLogin,
   errorMsg,
   setErrorMsg,

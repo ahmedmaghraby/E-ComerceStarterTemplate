@@ -1,10 +1,9 @@
 import { FC } from "react";
+import {TextButtonProps} from "@/type/props"
 
-type Props = {
-  value: string;
-};
 
-const TextButton: FC<Props> = ({ value }) => (
+
+const TextButton: FC<TextButtonProps> = ({ value }) => (
   <div className={`group transition-all flex justify-center w-28 relative`}>
     <button
       type="button"

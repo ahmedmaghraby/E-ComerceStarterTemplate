@@ -98,13 +98,6 @@ export default function SearchForm() {
               <Dialog.Overlay className="fixed inset-0 opacity-50 bg-gray500" />
             </Transition.Child>
 
-            {/* This element is to trick the browser into centering the modal contents. */}
-            {/* <span
-              className="inline-block h-screen align-middle"
-              aria-hidden="true"
-            >
-              &#8203;
-            </span> */}
             <Transition.Child
               as={Fragment}
               enter="ease-linear duration-400"

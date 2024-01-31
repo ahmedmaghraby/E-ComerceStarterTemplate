@@ -1,15 +1,8 @@
+import { buttonProps } from "@/type/props";
 import { FC } from "react";
 
-type Props = {
-  type?: "button" | "submit" | "reset";
-  extraClass?: string;
-  size?: "sm" | "lg" | "xl";
-  value: string;
-  disabled?: boolean;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-};
 
-const Button: FC<Props> = ({
+const Button: FC<buttonProps> = ({
   size = "sm",
   value,
   extraClass,

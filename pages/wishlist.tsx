@@ -21,7 +21,7 @@ const Wishlist = () => {
 
   return (
     <div>
-      <Header title={`Wishlist - Haru Fashion`} />
+      <Header title={`Wishlist - Webook`} />
 
       <main id="main-content">
         <div className="w-full px-4 border-t-2 app-max-width sm:px-8 md:px-20 border-gray100">

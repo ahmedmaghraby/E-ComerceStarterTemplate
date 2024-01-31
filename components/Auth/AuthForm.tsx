@@ -7,15 +7,10 @@ import Button from "@/components/Buttons/Button";
 import Login from "@/components/Auth/Login";
 import Register from "@/components/Auth/Register";
 import ForgotPassword from "@/components/Auth/ForgotPassword";
+import {CurrentPage, AuthFrormProps} from "@/type/props"
 
-type CurrentPage = "login" | "register" | "forgot-password";
 
-type Props = {
-  extraClass?: string;
-  children: any;
-};
-
-const LoginForm: FC<Props> = ({ extraClass, children }) => {
+const LoginForm: FC<AuthFrormProps> = ({ extraClass, children }) => {
   const auth = useAuth();
   const [currentPage, setCurrentPage] = useState<CurrentPage>("login");
   const [open, setOpen] = useState(false);
@@ -106,7 +101,6 @@ const LoginForm: FC<Props> = ({ extraClass, children }) => {
               <Dialog.Overlay className="fixed inset-0 opacity-50 bg-gray500" />
             </Transition.Child>
 
-            {/* This element is to trick the browser into centering the modal contents. */}
             <span
               className="inline-block h-screen align-middle"
               aria-hidden="true"
@@ -131,31 +125,6 @@ const LoginForm: FC<Props> = ({ extraClass, children }) => {
                   &#10005;
                 </button>
                 {modalBox}
-                {/* {auth.user ? (
-                  <SuccessModal
-                    successMsg={successMsg}
-                    setSuccessMsg={setSuccessMsg}
-                  />
-                ) : (if (currentPage === "login") {(
-                  <Login
-                    onRegister={() => setCurrentPage("login")}
-                    errorMsg={errorMsg}
-                    setErrorMsg={setErrorMsg}
-                    setSuccessMsg={setSuccessMsg}
-                  />
-                )} else if (currentPage === "register") {(
-                  <Register
-                    onLogin={() => setCurrentPage("register")}
-                    errorMsg={errorMsg}
-                    setErrorMsg={setErrorMsg}
-                    setSuccessMsg={setSuccessMsg}
-                  />
-                )} else {(
-                  <ForgotPassword onRegister={() => setCurrentPage("login")}
-                  errorMsg={errorMsg}
-                  setErrorMsg={setErrorMsg}
-                  setSuccessMsg={setSuccessMsg} />
-                )})} */}
               </div>
             </Transition.Child>
           </div>
@@ -185,8 +154,6 @@ const SuccessModal = ({
         as="h3"
         className="my-8 text-xl font-medium leading-6 text-center text-gray-900 md:text-2xl whitespace-nowrap"
       >
-        {/* {t("login_successful")} */}
-        {/* {t("register_successful")} */}
         {successMsg !== "" ? t(successMsg) : t("profile")}
       </Dialog.Title>
       <div className="mb-12">

@@ -8,13 +8,10 @@ import styles from "@/components/Card/Card.module.css";
 import HeartSolid from "@/public/icons/HeartSolid";
 import { useCart } from "@/context/cart/CartProvider";
 import { useWishlist } from "@/context/wishlist/WishlistProvider";
-import { itemType } from "@/type/product";
+import {CardProps} from "@/type/props"
 
-type Props = {
-  item: itemType;
-};
 
-const Card: FC<Props> = ({ item }) => {
+const Card: FC<CardProps> = ({ item }) => {
   const t = useTranslations("CartWishlist");
   const { wishlist, addToWishlist, deleteWishlistItem } = useWishlist();
   const { addOne } = useCart();
