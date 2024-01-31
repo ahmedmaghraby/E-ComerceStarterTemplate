@@ -74,12 +74,14 @@ export default function Footer() {
             <Link
               href="www.facebook.com"
               aria-label="Facebook Page for webook page"
+              passHref
             >
               <FacebookLogo />
             </Link>
             <Link
               href="www.ig.com"
               aria-label="Instagram Account for webook page"
+              passHref
             >
               <InstagramLogo />
             </Link>

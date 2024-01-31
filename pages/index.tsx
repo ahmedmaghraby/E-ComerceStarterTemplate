@@ -162,7 +162,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       messages: {
-        ...require(`@/i18n/${locale}.json`),
+        ...require(`@/messages/${locale}.json`),
       },
       products,
     },

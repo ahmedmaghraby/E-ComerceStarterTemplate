@@ -85,7 +85,7 @@ export const getServerSideProps: GetServerSideProps = async ({
 
   return {
     props: {
-      messages: (await import(`@/i18n/${locale}.json`)).default,
+      messages: (await import(`@/messages/${locale}.json`)).default,
       items,
       searchWord: q,
     },
