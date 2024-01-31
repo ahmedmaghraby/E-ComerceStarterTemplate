@@ -1,13 +1,13 @@
 .topLeftMenu {
-  @apply ml-8;
+  @apply mx-4;
 }
 
 .topLeftMenu li {
-  @apply text-xs my-2 mr-4 hover:text-gray300;
+  @apply text-xs my-2 mx-2 hover:text-gray300;
 }
 
 .topRightMenu li {
-  @apply text-xs my-2 ml-4 hover:text-gray300;
+  @apply text-xs my-2 mx-2 hover:text-gray300;
 }
 
 .mainMenu {
@@ -16,7 +16,7 @@
 
 
 .leftMenu li {
-  @apply mr-12 hidden lg:block whitespace-nowrap;
+  @apply mx-6 hidden lg:block whitespace-nowrap;
 }
 
 .leftMenu li:hover {
@@ -28,7 +28,7 @@
 }
 
 .rightMenu li {
-  @apply ml-12;
+  @apply mx-6;
 }
 
 .rightMenu li:not(:last-child) {

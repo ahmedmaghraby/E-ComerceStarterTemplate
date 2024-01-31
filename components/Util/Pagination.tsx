@@ -4,9 +4,10 @@ import PrevArrow from "@/public/icons/PrevArrow";
 import { PaginationProps } from "@/type/props";
 
 
-const Pagination: React.FC<PaginationProps> = ({ lastPage, currentPage, orderby }) => {
+const Pagination: React.FC<PaginationProps> = ({ lastPage, currentPage, orderby, }) => {
   const router = useRouter();
   const { category } = router.query;
+  const {locale} = useRouter();
 
   let pageNumbers: number[] = [];
 
@@ -73,7 +74,7 @@ const Pagination: React.FC<PaginationProps> = ({ lastPage, currentPage, orderby 
               currentPage === 1
                 ? "pointer-events-none cursor-not-allowed text-gray400"
                 : "cursor-pointer"
-            } focus:outline-none flex justify-center items-center h-10 w-16 px-3 border mx-1 hover:bg-gray500 hover:text-gray100`}
+            }  ${locale =='ar' ? 'rotate-180':''} focus:outline-none flex justify-center items-center h-10 w-16 px-3 border mx-1 hover:bg-gray500 hover:text-gray100`}
           >
             <PrevArrow />
           </button>
@@ -122,7 +123,7 @@ const Pagination: React.FC<PaginationProps> = ({ lastPage, currentPage, orderby 
               currentPage >= lastPage
                 ? "pointer-events-none cursor-not-allowed text-gray400"
                 : "cursor-pointer"
-            } focus:outline-none flex justify-center items-center h-10 w-16 px-3 border mx-1 hover:bg-gray500 hover:text-gray100`}
+            } ${locale =='ar' ? 'rotate-180':''} focus:outline-none flex justify-center items-center h-10 w-16 px-3 border mx-1 hover:bg-gray500 hover:text-gray100`}
           >
             <NextArrow />
           </button>

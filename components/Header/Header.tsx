@@ -84,7 +84,7 @@ const Header: React.FC<Props> = ({ title }) => {
               <Menu />
             </div>
 
-            <ul className={`flex-0 lg:flex-1 flex ${styles.leftMenu}`}>
+            <ul className={`flex-0 lg:flex-1 flex ${styles.leftMenu} ltr:mr-4 rtl:ml-4`}>
               <li>
                 <Link href={`/product-category/men`}>
                   <a>{t("men")}</a>
