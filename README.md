@@ -1,6 +1,6 @@
-
-
-![E-ComerceStarterTemplate)](https://ibb.co/ZWcBFKW)
+<p align="center">
+  <img src="https://i.ibb.co/f4rkyt4/all-devices-black-1.png" alt="E-ComerceStarterTemplate"/>
+</p>
 
 
 # E-Commerce Starter Template
