@@ -1,3 +1,8 @@
+
+
+![E-ComerceStarterTemplate)](https://ibb.co/ZWcBFKW)
+
+
 # E-Commerce Starter Template
 
 Welcome to the E-Commerce Starter Template, a high-performance web application built with Next.js, TypeScript, Tailwind CSS, and PWA support. This template not only provides a rich set of features but also excels in terms of performance, SEO, and accessibility.
