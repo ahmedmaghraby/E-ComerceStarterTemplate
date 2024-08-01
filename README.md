@@ -107,3 +107,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Thank you for using the E-Commerce Starter Template! If you encounter any issues or have suggestions for improvement, please open an issue on the [GitHub repository](https://github.com/ahmedmaghraby/E-ComerceStarterTemplate).
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=E-ComerceStarterTemplate&label=Profile%20views&color=0e75b6&style=flat" alt="ahmedmaghraby" /> </p>
